@@ -1,8 +1,10 @@
 # Trolol - Command line tool for trolling
 
-Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
+Troll your friends with a simple command AS QUICKLY AS POSSIBLE. 
 
 ![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
+
+> Currently usable **only on Linux and Mac OS X** machines.
 
 ## Installation
 
@@ -46,7 +48,7 @@ will start throwing error after using a command above
 
 ## Contribute
 
-1. Write a bash script
+1. Implement a cool and "easy to revert" troll in a bash script
 2. Move the script to `./src/bash-scripts/`
 3. Write a command to `./bin/trolol` (more info about [commander.js](https://github.com/tj/commander.js))
 4. Write a shell script executor to `./src/trolol.js` (more info about [ShellJS](https://github.com/shelljs/shelljs))
