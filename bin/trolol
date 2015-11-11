@@ -19,4 +19,10 @@ program
     .description('Overwrite command with a fake alias')
     .action(trolol.commandNotFound);
 
+program
+    .command('friday')
+    .arguments('[wait]')
+    .description('Open "Friday by Rebecca Black" in a browser with a wait time in seconds')
+    .action(trolol.friday);
+
 program.parse(process.argv);
