@@ -1,0 +1,24 @@
+{
+  "name": "trolol",
+  "version": "0.0.0",
+  "description": "Troll your friends AS QUICKLY AS POSSIBLE",
+  "keywords": [
+    "troll",
+    "shell"
+  ],
+  "author": [
+    {
+      "name": "Uku Pattak",
+      "email": "ukupat@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bin": {
+    "trolol": "./bin/trolol"
+  },
+  "dependencies": {
+    "app-root-path": "^1.0.0",
+    "commander": "^2.9.0",
+    "shelljs": "^0.5.3"
+  }
+}

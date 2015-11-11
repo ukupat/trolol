@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var trolol = require('../src/trolol.js');
+
+program
+    .version('0.0.0');
+
+program
+    .command('website')
+    .arguments('<given> <to>')
+    .description('Mirror webpage to a different page')
+    .action(trolol.website);
+
+program
+    .command('command-not-found')
+    .alias('cmd')
+    .arguments('<command>')
+    .description('Overwrite command with a fake alias')
+    .action(trolol.commandNotFound);
+
+program.parse(process.argv);
