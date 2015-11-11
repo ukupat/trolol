@@ -1,8 +1,8 @@
 # Trolol - Command line tool for trolling
 
-![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
-
 Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
+
+![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
 
 ## Installation
 
