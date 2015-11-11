@@ -1,15 +1,17 @@
 {
   "name": "trolol",
-  "version": "0.0.0",
+  "version": "0.1.0-0",
   "description": "Troll your friends AS QUICKLY AS POSSIBLE",
   "keywords": [
     "troll",
     "shell"
   ],
-  "author": [{
-    "name": "Uku Pattak",
-    "email": "ukupat@gmail.com"
-  }],
+  "author": [
+    {
+      "name": "Uku Pattak",
+      "email": "ukupat@gmail.com"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
