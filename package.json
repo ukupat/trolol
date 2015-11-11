@@ -6,13 +6,16 @@
     "troll",
     "shell"
   ],
-  "author": [
-    {
-      "name": "Uku Pattak",
-      "email": "ukupat@gmail.com"
-    }
-  ],
+  "author": [{
+    "name": "Uku Pattak",
+    "email": "ukupat@gmail.com"
+  }],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ukupat/trolol.git"
+  },
+  "homepage": "http://github.com/ukupat/trolol",
   "bin": {
     "trolol": "./bin/trolol"
   },
