@@ -55,6 +55,8 @@ will start throwing error after using a command above
 5. Test (no automated tests for now)
 6. Make a pull request
 
+With a **succesful contribution** you can **write your name in history**.
+
 ## License
 
 [MIT](//github.com/ukupat/trolol/blob/master/LICENSE)
