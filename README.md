@@ -1,5 +1,8 @@
-# trolol
-Troll your friends AS QUICKLY AS POSSIBLE with a command
+# Trolol - Command line tool for trolling
+
+![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
+
+Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
 
 ## Installation
 
@@ -40,6 +43,15 @@ will start throwing error after using a command above
 ```
 -bash: grails: command not found
 ```
+
+## Contribute
+
+1. Write a bash script
+2. Move the script to `./src/bash-scripts/`
+3. Write a command to `./bin/trolol` (more info about [commander.js](https://github.com/tj/commander.js))
+4. Write a shell script executor to `./src/trolol.js` (more info about [ShellJS](https://github.com/shelljs/shelljs))
+5. Test (no automated tests for now)
+6. Make a pull request
 
 ## License
 
