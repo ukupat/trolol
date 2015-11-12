@@ -21,8 +21,20 @@ program
 
 program
     .command('friday')
-    .arguments('[wait]')
-    .description('Open "Friday by Rebecca Black" in a browser with a wait time in seconds')
-    .action(trolol.friday);
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Open "Friday by Rebecca Black" in a browser')
+    .action(function (options) {
+        trolol.friday(options.wait);
+    });
+
+program
+    .command('volume-level')
+    .alias('vol')
+    .arguments('<length>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('[MAC ONLY] Change volume level randomly in period of time (length in seconds)')
+    .action(function (length, options) {
+        trolol.volumeLevel(length, options.wait);
+    });
 
 program.parse(process.argv);

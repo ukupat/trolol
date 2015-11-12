@@ -23,6 +23,15 @@ module.exports = {
             macTrolls.friday(wait);
         else
             linuxTrolls.friday(wait);
+    },
+
+    volumeLevel: function (length, wait) {
+        wait = wait || 0
+
+        if (isMac())
+            macTrolls.volumeLevel(length, wait);
+        else
+            echo('Missing feature for this OS. Sorry!')
     }
 };
 
