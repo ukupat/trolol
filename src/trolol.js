@@ -39,6 +39,10 @@ module.exports = {
         require(rootPath + '/src/scripts/move-mouse.js').start(length, options.wait || 0);
     },
 
+    disableMouse: function (length, options) {
+        require(rootPath + '/src/scripts/disable-mouse.js').start(length, options.wait || 0);
+    },
+
     say: function (message, options) {
         if (isMac())
             macTrolls.say(message, options.scary, options.wait || 0);

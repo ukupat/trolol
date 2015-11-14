@@ -49,6 +49,13 @@ program
     .action(trolol.moveMouse);
 
 program
+    .command('disable-mouse')
+    .arguments('<length>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Disable mouse cursor for some time (length in seconds)')
+    .action(trolol.disableMouse);
+
+program
     .command('say')
     .arguments('<message>')
     .option('-s, --scary', 'Make the voice whisper')
