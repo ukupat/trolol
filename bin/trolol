@@ -63,4 +63,11 @@ program
     .description('Beeep beeeeep, annoying little sh*t')
     .action(trolol.beep);
 
+program
+    .command('photo-booth')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('[MAC ONLY] Open up Photo booth n times')
+    .action(trolol.photoBooth);
+
 program.parse(process.argv);

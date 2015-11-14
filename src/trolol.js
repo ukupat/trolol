@@ -26,7 +26,7 @@ module.exports = {
         if (isMac())
             macTrolls.volumeLevel(length, options.wait || 0);
         else
-            echo('Missing feature for this OS. Sorry!')
+            echo('Missing feature for this OS. Sorry!');
     },
 
     brightness: function (length, options) {
@@ -43,11 +43,18 @@ module.exports = {
         if (isMac())
             macTrolls.say(message, options.scary, options.wait || 0);
         else
-            echo('Missing feature for this OS. Sorry!')
+            echo('Missing feature for this OS. Sorry!');
     },
 
     beep: function (times, options) {
         require(rootPath + '/src/scripts/beep.js').start(times, options.wait || 0);
+    },
+
+    photoBooth: function (times, options) {
+        if (isMac())
+            macTrolls.photoBooth(times, options.wait || 0);
+        else
+            echo('Missing feature for this OS. Sorry!');
     }
 };
 

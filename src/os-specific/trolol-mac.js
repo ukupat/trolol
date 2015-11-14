@@ -16,6 +16,10 @@ module.exports = {
         var voice = scary ? 'Whisper' : 'Alex';
 
         exec(generateBashCommand('say') + ' "' + message + '" ' + voice + ' ' + wait);
+    },
+
+    photoBooth: function (times, wait) {
+        exec(generateBashCommand('photo-booth') + ' ' + times + ' ' + wait);
     }
 };
 
