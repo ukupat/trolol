@@ -32,6 +32,15 @@ module.exports = {
             macTrolls.volumeLevel(length, wait);
         else
             echo('Missing feature for this OS. Sorry!')
+    },
+
+    brightness: function (length, wait) {
+        wait = wait || 0
+
+        if (isMac())
+            macTrolls.brightness(length, wait);
+        else
+            echo('Missing feature for this OS. Sorry!');
     }
 };
 

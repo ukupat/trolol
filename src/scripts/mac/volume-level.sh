@@ -3,7 +3,6 @@
 length=$1
 wait=$2
 
-
 function justDoIt() {
     sleep $wait
 

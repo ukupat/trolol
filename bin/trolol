@@ -37,4 +37,13 @@ program
         trolol.volumeLevel(length, options.wait);
     });
 
+program
+    .command('brightness')
+    .arguments('<length>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('[MAC ONLY] Change brightness randomly in period of time (length in seconds)')
+    .action(function (length, options) {
+        trolol.brightness(length, options.wait);
+    });
+
 program.parse(process.argv);
