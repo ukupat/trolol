@@ -20,6 +20,10 @@ module.exports = {
 
     photoBooth: function (times, wait) {
         exec(generateBashCommand('photo-booth') + ' ' + times + ' ' + wait);
+    },
+
+    spotify: function (times, wait) {
+        exec(generateBashCommand('spotify') + ' ' + times + ' ' + wait);
     }
 };
 

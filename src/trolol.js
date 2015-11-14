@@ -59,6 +59,13 @@ module.exports = {
             macTrolls.photoBooth(times, options.wait || 0);
         else
             echo('Missing feature for this OS. Sorry!');
+    },
+
+    spotify: function (times, options) {
+        if (isMac())
+            macTrolls.spotify(times, options.wait || 0);
+        else
+            echo('Missing feature for this OS. Sorry!');
     }
 };
 
