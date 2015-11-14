@@ -37,6 +37,17 @@ module.exports = {
 
     moveMouse: function (length, options) {
         require(rootPath + '/src/scripts/move-mouse.js').start(length, options.wait || 0);
+    },
+
+    say: function (message, options) {
+        if (isMac())
+            macTrolls.say(message, options.scary, options.wait || 0);
+        else
+            echo('Missing feature for this OS. Sorry!')
+    },
+
+    beep: function (times, options) {
+        require(rootPath + '/src/scripts/beep.js').start(times, options.wait || 0);
     }
 };
 

@@ -4,7 +4,7 @@ var program = require('commander');
 var trolol = require('../src/trolol.js');
 
 program
-    .version('0.1');
+    .version(require('../package.json').version);
 
 program
     .command('website')
@@ -47,5 +47,20 @@ program
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
     .description('Move mouse slowly and randomly across the screen')
     .action(trolol.moveMouse);
+
+program
+    .command('say')
+    .arguments('<message>')
+    .option('-s, --scary', 'Make the voice whisper')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('[MAC ONLY] Scare the sh*t out of your dude with a speaking computer')
+    .action(trolol.say);
+
+program
+    .command('beep')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Beeep beeeeep, annoying little sh*t')
+    .action(trolol.beep);
 
 program.parse(process.argv);

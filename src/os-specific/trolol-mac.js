@@ -10,6 +10,12 @@ module.exports = {
 
     volumeLevel: function (length, wait) {
         exec(generateBashCommand('volume-level') + ' ' + length + ' ' + wait);
+    },
+
+    say: function (message, scary, wait) {
+        var voice = scary ? 'Whisper' : 'Alex';
+
+        exec(generateBashCommand('say') + ' "' + message + '" ' + voice + ' ' + wait);
     }
 };
 
