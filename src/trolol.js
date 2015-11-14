@@ -7,9 +7,8 @@ var linuxTrolls = require(rootPath + '/src/os-specific/trolol-linux.js');
 
 module.exports = {
 
-    website: function (given, to) {
-        // TODO
-        echo('Missing feature. Sorry!');
+    website: function (from, to) {
+        exec('bash ' + rootPath + '/src/scripts/hosts.sh ' + from + ' ' + to);
     },
 
     commandNotFound: function (command) {

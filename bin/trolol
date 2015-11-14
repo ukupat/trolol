@@ -8,8 +8,8 @@ program
 
 program
     .command('website')
-    .arguments('<given> <to>')
-    .description('Mirror webpage to a different page')
+    .arguments('<from> <to>')
+    .description('[RUN AS ADMIN] Redirect webpage to a different site')
     .action(trolol.website);
 
 program
