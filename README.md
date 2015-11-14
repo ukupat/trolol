@@ -14,7 +14,7 @@ $ npm install -g trolol
 ## Usage
 
 ```
-Usage: trolol [options] [command]
+  Usage: trolol [options] [command]
 
 
   Commands:
@@ -23,6 +23,8 @@ Usage: trolol [options] [command]
     command-not-found|cmd <command>      Overwrite command with a fake alias
     friday [options]                     Open "Friday by Rebecca Black" in a browser
     volume-level|vol [options] <length>  [MAC ONLY] Change volume level randomly in period of time (length in seconds)
+    brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
+    move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
 
   Options:
 
@@ -59,7 +61,7 @@ will start changing volume level after 25 seconds randomly 10 times.
 ## Contribute
 
 1. Implement a cool and "easy to revert" troll in a bash script
-2. Move the script to `./src/scripts/`
+2. Move the script to `./src/scripts`
 3. Write a command to `./bin/trolol` (more info about [commander.js](https://github.com/tj/commander.js))
 4. Write a shell script executor to `./src/trolol.js` (more info about [ShellJS](https://github.com/shelljs/shelljs))
 5. Test (no automated tests for now)
