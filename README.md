@@ -7,6 +7,8 @@ Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
 
 ## Installation
 
+Install [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) and use it to install `trolol` globally
+
 ```
 $ npm install -g trolol
 ```
@@ -25,6 +27,8 @@ $ npm install -g trolol
     volume-level|vol [options] <length>  [MAC ONLY] Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
     move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
+    say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
+    beep [options] <times>               Beeep beeeeep, annoying little sh*t
 
   Options:
 
