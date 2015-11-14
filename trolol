@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var trolol = require('../src/trolol.js');
+var trolol = require('./src/trolol.js');
 
 program
-    .version(require('../package.json').version);
+    .version(require('./package.json').version);
 
 program
     .command('website')

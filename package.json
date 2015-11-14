@@ -21,7 +21,7 @@
   },
   "homepage": "http://github.com/ukupat/trolol",
   "bin": {
-    "trolol": "./bin/trolol"
+    "trolol": "./trolol"
   },
   "dependencies": {
     "app-root-path": "^1.0.0",
