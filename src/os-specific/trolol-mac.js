@@ -10,10 +10,6 @@ module.exports = {
 
     volumeLevel: function (length, wait) {
         exec(generateBashCommand('volume-level') + ' ' + length + ' ' + wait);
-    },
-
-    brightness: function (length, wait) {
-        exec('bash ' + rootPath + '/src/scripts/mac/brightness.sh ' + rootPath + '/node_modules/.bin/brightness ' + length + ' ' + wait)
     }
 };
 

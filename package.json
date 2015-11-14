@@ -5,7 +5,8 @@
   "keywords": [
     "troll",
     "trolol",
-    "bash"
+    "bash",
+    "cli"
   ],
   "author": [
     {
@@ -26,6 +27,7 @@
     "app-root-path": "^1.0.0",
     "brightness-cli": "^2.2.1",
     "commander": "^2.9.0",
+    "robotjs": "^0.3.3",
     "shelljs": "^0.5.3"
   }
 }

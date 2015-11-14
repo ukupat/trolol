@@ -4,7 +4,7 @@ var program = require('commander');
 var trolol = require('../src/trolol.js');
 
 program
-    .version('0.0.0');
+    .version('0.1');
 
 program
     .command('website')
@@ -23,9 +23,7 @@ program
     .command('friday')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
     .description('Open "Friday by Rebecca Black" in a browser')
-    .action(function (options) {
-        trolol.friday(options.wait);
-    });
+    .action(trolol.friday);
 
 program
     .command('volume-level')
@@ -33,17 +31,21 @@ program
     .arguments('<length>')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
     .description('[MAC ONLY] Change volume level randomly in period of time (length in seconds)')
-    .action(function (length, options) {
-        trolol.volumeLevel(length, options.wait);
-    });
+    .action(trolol.volumeLevel);
 
 program
     .command('brightness')
     .arguments('<length>')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
-    .description('[MAC ONLY] Change brightness randomly in period of time (length in seconds)')
-    .action(function (length, options) {
-        trolol.brightness(length, options.wait);
-    });
+    .description('Change brightness randomly in period of time (length in seconds)')
+    .action(trolol.brightness);
+
+program
+    .command('move-mouse')
+    .alias('mouse')
+    .arguments('<length>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Move mouse slowly and randomly across the screen')
+    .action(trolol.moveMouse);
 
 program.parse(process.argv);

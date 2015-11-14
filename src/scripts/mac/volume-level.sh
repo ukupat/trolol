@@ -9,11 +9,10 @@ function justDoIt() {
     for ((n=0;n<$length;n++));
     do
         sleep 3;
-        random=$(((RANDOM % 10) + 1));
-        osascript -e "set Volume $random";
+        osascript -e "set Volume $(((RANDOM % 10) + 1))";
     done
 }
 
-(justDoIt) &
+justDoIt &
 
 echo "Random volume level loop is going to be activated in $wait second(s), trololol..."
