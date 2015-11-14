@@ -27,8 +27,11 @@ $ npm install -g trolol
     volume-level|vol [options] <length>  [MAC ONLY] Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
     move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
+    disable-mouse [options] <length>     Disable mouse cursor for some time (length in seconds)
     say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
     beep [options] <times>               Beeep beeeeep, annoying little sh*t
+    photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
+    spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
 
   Options:
 
