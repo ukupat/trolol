@@ -26,6 +26,12 @@ program
     .action(trolol.friday);
 
 program
+    .command('steve')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Open "Developers by Steve Balmer" in a browser')
+    .action(trolol.steve);
+
+program
     .command('volume-level')
     .alias('vol')
     .arguments('<length>')
