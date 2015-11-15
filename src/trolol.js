@@ -1,18 +1,18 @@
 require('shelljs/global');
 
-var rootPath = require('app-root-path');
+var currentPath = __dirname;
 
-var macTrolls = require(rootPath + '/src/os-specific/trolol-mac.js');
-var linuxTrolls = require(rootPath + '/src/os-specific/trolol-linux.js');
+var macTrolls = require('./os-specific/trolol-mac.js');
+var linuxTrolls = require('./os-specific/trolol-linux.js');
 
 module.exports = {
 
     website: function (from, to) {
-        exec('bash ' + rootPath + '/src/scripts/hosts.sh ' + from + ' ' + to);
+        exec('bash ' + currentPath + '/scripts/hosts.sh ' + from + ' ' + to);
     },
 
     commandNotFound: function (command) {
-        exec('bash ' + rootPath + '/src/scripts/command-not-found.sh ' + command);
+        exec('bash ' + currentPath + '/scripts/command-not-found.sh ' + command);
     },
 
     friday: function (options) {
@@ -31,15 +31,15 @@ module.exports = {
     brightness: function (length, options) {
         wait = options.wait || 0;
 
-        exec('bash ' + rootPath + '/src/scripts/brightness.sh ' + rootPath + '/node_modules/.bin/brightness ' + length + ' ' + wait)
+        exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait)
     },
 
     moveMouse: function (length, options) {
-        require(rootPath + '/src/scripts/move-mouse.js').start(length, options.wait || 0);
+        require('./scripts/move-mouse.js').start(length, options.wait || 0);
     },
 
     disableMouse: function (length, options) {
-        require(rootPath + '/src/scripts/disable-mouse.js').start(length, options.wait || 0);
+        require('./scripts/disable-mouse.js').start(length, options.wait || 0);
     },
 
     say: function (message, options) {
@@ -50,7 +50,7 @@ module.exports = {
     },
 
     beep: function (times, options) {
-        require(rootPath + '/src/scripts/beep.js').start(times, options.wait || 0);
+        require('./scripts/beep.js').start(times, options.wait || 0);
     },
 
     photoBooth: function (times, options) {

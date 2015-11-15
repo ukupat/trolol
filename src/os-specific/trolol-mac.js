@@ -1,7 +1,5 @@
 require('shelljs/global');
 
-var rootPath = require('app-root-path');
-
 module.exports = {
 
     friday: function (wait) {
@@ -28,5 +26,5 @@ module.exports = {
 };
 
 function generateBashCommand(scriptFile) {
-    return 'bash ' + rootPath + '/src/scripts/mac/' + scriptFile + '.sh';
+    return 'bash ' + __dirname + '/../scripts/mac/' + scriptFile + '.sh';
 }
