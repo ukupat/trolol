@@ -72,6 +72,16 @@ $ trolol volume-level 10 --wait 25
 
 will start changing volume level after 25 seconds randomly 10 times.
 
+### Move mouse
+
+Command
+
+```
+$ trolol move-mouse 60
+```
+
+will move the mouse 60 seconds randomly across the screen
+
 ## Contribute
 
 1. Implement a cool and "easy to revert" troll in a bash script
