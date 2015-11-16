@@ -16,13 +16,13 @@ module.exports = {
     },
 
     friday: function (options) {
-        wait = options.wait || 0;
+        var wait = options.wait || 0;
 
         isMac() ? macTrolls.friday(wait) : linuxTrolls.friday(wait);
     },
 
     steve: function (options) {
-        wait = options.wait || 0;
+        var wait = options.wait || 0;
 
         isMac() ? macTrolls.steve(wait) : linuxTrolls.steve(wait);
     },
@@ -71,6 +71,12 @@ module.exports = {
             macTrolls.spotify(times, options.wait || 0);
         else
             echo('Missing feature for this OS. Sorry!');
+    },
+
+    eject: function (times, options) {
+        var wait = options.wait || 0;
+
+        isMac() ? macTrolls.eject(times, wait) : linuxTrolls.eject(times, wait);
     }
 };
 

@@ -90,4 +90,11 @@ program
     .description('[MAC ONLY] Switch Spotify music track back after every 15 seconds n time')
     .action(trolol.spotify);
 
+program
+    .command('eject')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Eject media from drive after every 15 seconds n time')
+    .action(trolol.eject);
+
 program.parse(process.argv);

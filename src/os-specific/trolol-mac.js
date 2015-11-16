@@ -22,6 +22,10 @@ module.exports = {
 
     spotify: function (times, wait) {
         exec(generateBashCommand('spotify') + ' ' + times + ' ' + wait);
+    },
+
+    eject: function (times, wait) {
+        exec(generateBashCommand('eject') + ' ' + times + ' ' + wait);
     }
 };
 
