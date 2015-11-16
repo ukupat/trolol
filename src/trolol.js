@@ -37,7 +37,7 @@ module.exports = {
     brightness: function (length, options) {
         wait = options.wait || 0;
 
-        exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait)
+        exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait);
     },
 
     moveMouse: function (length, options) {
@@ -77,6 +77,10 @@ module.exports = {
         var wait = options.wait || 0;
 
         isMac() ? macTrolls.eject(times, wait) : linuxTrolls.eject(times, wait);
+    },
+
+    dickbutt: function () {
+        exec('bash ' + currentPath + '/scripts/dickbutt.sh')
     }
 };
 

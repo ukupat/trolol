@@ -97,4 +97,10 @@ program
     .description('Eject media from drive after every 15 seconds n time')
     .action(trolol.eject);
 
+program
+    .command('motd-dickbutt')
+    .alias('dickbutt')
+    .description('[RUN AS ADMIN] Add Dickbutt ASCII art text to Terminal Message of the day')
+    .action(trolol.dickbutt);
+
 program.parse(process.argv);
