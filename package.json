@@ -30,6 +30,7 @@
     "commander": "^2.9.0",
     "keypress": "^0.2.1",
     "robotjs": "^0.3.3",
+    "screensaver": "^2.0.0",
     "shelljs": "^0.5.3"
   }
 }

@@ -47,6 +47,13 @@ program
     .action(trolol.brightness);
 
 program
+    .command('screensaver')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Start the screensaver with a random interval of 5 to 30 seconds')
+    .action(trolol.screensaver);
+
+program
     .command('move-mouse')
     .alias('mouse')
     .arguments('<length>')
