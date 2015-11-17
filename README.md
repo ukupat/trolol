@@ -1,6 +1,6 @@
 # Trolol - Command line tool for trolling
 
-Troll your friends with a simple command AS QUICKLY AS POSSIBLE. 
+Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
 ![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
 
 > Currently usable **only on Linux and Mac OS X** machines.
@@ -25,19 +25,20 @@ $ npm install -g trolol
     command-not-found|cmd <command>      Overwrite command with a fake alias
     photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
     spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
-    
+
     friday [options]                     Open "Friday by Rebecca Black" in a browser
     steve [options]                      Open "Developers by Steve Balmer" in a browser
-    
+
     volume-level|vol [options] <length>  [MAC ONLY] Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
-    
+    screensaver [options] <times>        Start the screensaver with a random interval of 5 to 30 seconds n times
+
     move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
     disable-mouse [options] <length>     Disable mouse cursor for some time (length in seconds)
-    
+
     say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
     beep [options] <times>               Beeep beeeeep, annoying little sh*t
-    
+
     eject [options] <times>              Eject media from drive after every 15 seconds n time
     motd-dickbutt|dickbutt               [RUN AS ADMIN] Add Dickbutt ASCII art text to Terminal Message of the day
 

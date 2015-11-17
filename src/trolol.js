@@ -40,6 +40,10 @@ module.exports = {
         exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait);
     },
 
+    screensaver: function (times, options) {
+        require('./scripts/screensaver.js').start(times, options.wait || 0);
+    },
+
     moveMouse: function (length, options) {
         require('./scripts/move-mouse.js').start(length, options.wait || 0);
     },
