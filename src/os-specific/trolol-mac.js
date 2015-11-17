@@ -26,6 +26,10 @@ module.exports = {
 
     eject: function (times, wait) {
         exec(generateBashCommand('eject') + ' ' + times + ' ' + wait);
+    },
+
+    steve: function (wait) {
+        exec(generateBashCommand('steve') + ' ' + wait);
     }
 };
 
