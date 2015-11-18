@@ -39,6 +39,7 @@ $ npm install -g trolol
     say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
     photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
     spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
+    mmm [options]                        [MAC ONLY] Receive approval from the computer, repeatedly
     
     website <from> <to>                  [RUN AS ADMIN] Redirect webpage to a different site
     motd-dickbutt|dickbutt               [RUN AS ADMIN] Add Dickbutt ASCII art text to Terminal Message of the day
