@@ -28,14 +28,13 @@ module.exports = {
     },
 
     volumeLevel: function (length, options) {
-        if (isMac())
-            macTrolls.volumeLevel(length, options.wait || 0);
-        else
-            echo('Missing feature for this OS. Sorry!');
+        var wait = options.wait || 0;
+
+        exec('bash ' + currentPath + '/scripts/volume-level.sh ' + currentPath + '/../node_modules/.bin/vol ' + length + ' ' + wait);
     },
 
     brightness: function (length, options) {
-        wait = options.wait || 0;
+        var wait = options.wait || 0;
 
         exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait);
     },

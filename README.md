@@ -29,7 +29,7 @@ $ npm install -g trolol
     friday [options]                     Open "Friday by Rebecca Black" in a browser
     steve [options]                      Open "Developers by Steve Balmer" in a browser
 
-    volume-level|vol [options] <length>  [MAC ONLY] Change volume level randomly in period of time (length in seconds)
+    volume-level|vol [options] <length>  Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
     screensaver [options] <times>        Start the screensaver with a random interval of 5 to 30 seconds n times
 
