@@ -1,7 +1,8 @@
 #!/bin/bash
 
-length=$1
-wait=$2
+bin=$1
+length=$2
+wait=$3
 
 function justDoIt() {
     sleep $wait
@@ -9,7 +10,13 @@ function justDoIt() {
     for ((n=0;n<$length;n++));
     do
         sleep 3;
-        osascript -e "set Volume $(((RANDOM % 10) + 1))";
+        random=$(((RANDOM % 10) + 1));
+
+        if [ $random == 10 ]; then
+           $bin 1
+        else
+           $bin "0.$random"
+        fi
     done
 }
 
