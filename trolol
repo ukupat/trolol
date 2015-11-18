@@ -7,12 +7,6 @@ program
     .version(require('./package.json').version);
 
 program
-    .command('website')
-    .arguments('<from> <to>')
-    .description('[RUN AS ADMIN] Redirect webpage to a different site')
-    .action(trolol.website);
-
-program
     .command('command-not-found')
     .alias('cmd')
     .arguments('<command>')
@@ -69,19 +63,26 @@ program
     .action(trolol.disableMouse);
 
 program
+    .command('beep')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Beeep beeeeep, annoying little sh*t')
+    .action(trolol.beep);
+
+program
+    .command('eject')
+    .arguments('<times>')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Eject media from drive after every 15 seconds n time')
+    .action(trolol.eject);
+
+program
     .command('say')
     .arguments('<message>')
     .option('-s, --scary', 'Make the voice whisper')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
     .description('[MAC ONLY] Scare the sh*t out of your dude with a speaking computer')
     .action(trolol.say);
-
-program
-    .command('beep')
-    .arguments('<times>')
-    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
-    .description('Beeep beeeeep, annoying little sh*t')
-    .action(trolol.beep);
 
 program
     .command('photo-booth')
@@ -98,11 +99,10 @@ program
     .action(trolol.spotify);
 
 program
-    .command('eject')
-    .arguments('<times>')
-    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
-    .description('Eject media from drive after every 15 seconds n time')
-    .action(trolol.eject);
+    .command('website')
+    .arguments('<from> <to>')
+    .description('[RUN AS ADMIN] Redirect webpage to a different site')
+    .action(trolol.website);
 
 program
     .command('motd-dickbutt')
