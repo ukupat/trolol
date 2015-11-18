@@ -21,6 +21,12 @@ module.exports = {
         isMac() ? macTrolls.friday(wait) : linuxTrolls.friday(wait);
     },
 
+    saturday: function (options) {
+        var wait = options.wait || 0;
+
+        isMac() ? macTrolls.saturday(wait) : linuxTrolls.saturday(wait);
+    },
+
     steve: function (options) {
         var wait = options.wait || 0;
 

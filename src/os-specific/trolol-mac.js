@@ -6,6 +6,10 @@ module.exports = {
         exec(generateBashCommand('friday') + ' ' + wait);
     },
 
+    saturday: function (wait) {
+        exec(generateBashCommand('saturday') + ' ' + wait);
+    },
+
     say: function (message, scary, wait) {
         var voice = scary ? 'Whisper' : 'Alex';
 
