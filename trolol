@@ -89,6 +89,7 @@ program
     .option('-c, --cycles <integer>', 'Repeat for <integer> cycles', parseInt)
     .option('-r, --rest <seconds>', 'Rest <seconds> between mmms', parseInt)
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .option('-v, --voice <string>', 'Select a system voice')
     .description('[MAC ONLY] Receive repeated approval from your computer')
     .action(trolol.mmm);
 

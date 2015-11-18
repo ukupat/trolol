@@ -12,8 +12,8 @@ module.exports = {
         exec(generateBashCommand('say') + ' "' + message + '" ' + voice + ' ' + wait);
     },
 
-    mmm: function (cycles, rest, wait) {
-        exec(generateBashCommand('mmm') + ' ' + cycles + ' ' + rest + ' ' + wait);
+    mmm: function (cycles, rest, wait, voice) {
+        exec(generateBashCommand('mmm') + ' ' + cycles + ' ' + rest + ' ' + wait + ' ' + voice );
     },
 
     photoBooth: function (times, wait) {

@@ -60,7 +60,7 @@ module.exports = {
 
     mmm: function (options) {
         if (isMac()){
-            macTrolls.mmm( options.cycles || 99 , options.rest || 20 , options.wait || 0 );
+            macTrolls.mmm( options.cycles || 99 , options.rest || 20 , options.wait || 0 , options.voice || 'Fred');
         }
         else
             echo('Missing feature for this OS. Sorry!');
