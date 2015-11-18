@@ -21,25 +21,26 @@ $ npm install -g trolol
 
   Commands:
 
-    website <from> <to>                  [RUN AS ADMIN] Redirect webpage to a different site
     command-not-found|cmd <command>      Overwrite command with a fake alias
-    photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
-    spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
-
+    
     friday [options]                     Open "Friday by Rebecca Black" in a browser
     steve [options]                      Open "Developers by Steve Balmer" in a browser
-
+    
     volume-level|vol [options] <length>  Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
-    screensaver [options] <times>        Start the screensaver with a random interval of 5 to 30 seconds n times
-
+    screensaver [options] <times>        Start the screensaver with a random interval of 5 to 30 seconds
+    
     move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
     disable-mouse [options] <length>     Disable mouse cursor for some time (length in seconds)
-
-    say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
+    
     beep [options] <times>               Beeep beeeeep, annoying little sh*t
-
     eject [options] <times>              Eject media from drive after every 15 seconds n time
+    
+    say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
+    photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
+    spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
+    
+    website <from> <to>                  [RUN AS ADMIN] Redirect webpage to a different site
     motd-dickbutt|dickbutt               [RUN AS ADMIN] Add Dickbutt ASCII art text to Terminal Message of the day
 
   Options:
