@@ -12,6 +12,10 @@ module.exports = {
         exec(generateBashCommand('say') + ' "' + message + '" ' + voice + ' ' + wait);
     },
 
+    mmm: function (cycles, rest, wait) {
+        exec(generateBashCommand('mmm') + ' ' + cycles + ' ' + rest + ' ' + wait);
+    },
+
     photoBooth: function (times, wait) {
         exec(generateBashCommand('photo-booth') + ' ' + times + ' ' + wait);
     },
