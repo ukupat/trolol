@@ -30,6 +30,7 @@ $ npm install -g trolol
     volume-level|vol [options] <length>  Change volume level randomly in period of time (length in seconds)
     brightness [options] <length>        Change brightness randomly in period of time (length in seconds)
     screensaver [options] <times>        Start the screensaver with a random interval of 5 to 30 seconds
+    shutdown <program> [options]         Shut down a program at random intervals, between 5 and 20 minutes
 
     move-mouse|mouse [options] <length>  Move mouse slowly and randomly across the screen
     disable-mouse [options] <length>     Disable mouse cursor for some time (length in seconds)
@@ -85,6 +86,23 @@ $ trolol move-mouse 60
 ```
 
 will move the mouse 60 seconds randomly across the screen
+
+### Shutdown
+
+Command
+
+```
+$ trolol shutdown iTunes
+```
+
+Will shut down iTunes randomly every 5 - 20 minutes, a total of 10 times
+
+```
+$ trolol shutdown iTunes --times 4 --wait 1 --range 1
+$ trolol shutdown iTunes -t 4 -w 1 -r 1
+```
+
+Will shut down iTunes randomly every 1 - 2 minutes, a total of 4 times.
 
 ## Contribute
 
