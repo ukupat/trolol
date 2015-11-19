@@ -88,9 +88,11 @@ module.exports = {
         exec('bash ' + currentPath + '/scripts/dickbutt.sh')
     },
 
-    shutdown: function(program, times, wait, range) {
-        // exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait);
-        exec(generateBashCommand('shutdown') + ' ' + message + ' ' + (times || 10) + ' ' + (wait || 5) + ' ' + (range || 15) );
+    shutdown: function(program, options) {
+        var times = options.times || 10;
+        var wait = options.wait || 5;
+        var range = options.range || 15;
+        exec( 'bash ' + currentPath + '/scripts/shutdown.sh ' + program + ' ' + times + ' ' + wait + ' ' + range );
     }
 
 };
