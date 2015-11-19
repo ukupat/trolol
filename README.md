@@ -1,6 +1,7 @@
 # Trolol - Command line tool for trolling
 
 Troll your friends with a simple command AS QUICKLY AS POSSIBLE.
+
 ![Trolol](https://media.giphy.com/media/4dLgdkQM2kfCg/giphy.gif)
 
 > Currently usable **only on Linux and Mac OS X** machines.
