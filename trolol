@@ -128,7 +128,7 @@ program
     .option('-w, --wait <minutes>', 'Minimum minutes between crashes', parseInt)
     .option('-r, --range <minutes>', 'Variety in minutes between crashes', parseInt)
     .description('Quit a program every [wait] to [wait+random] minutes.')
-    .action(trolol.mmm);
+    .action(trolol.shutdown);
 
 program.parse(process.argv);
 
