@@ -92,17 +92,10 @@ will move the mouse 60 seconds randomly across the screen
 Command
 
 ```
-$ trolol shutdown iTunes
+$ trolol shutdown iTunes --times 10
 ```
 
 Will shut down iTunes randomly every 5 - 20 minutes, a total of 10 times
-
-```
-$ trolol shutdown iTunes --times 4 --wait 1 --range 1
-$ trolol shutdown iTunes -t 4 -w 1 -r 1
-```
-
-Will shut down iTunes randomly every 1 - 2 minutes, a total of 4 times.
 
 ## Contribute
 
