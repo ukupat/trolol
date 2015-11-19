@@ -86,7 +86,13 @@ module.exports = {
 
     dickbutt: function () {
         exec('bash ' + currentPath + '/scripts/dickbutt.sh')
+    },
+
+    shutdown: function(program, times, wait, range) {
+        // exec('bash ' + currentPath + '/scripts/brightness.sh ' + currentPath + '/../node_modules/.bin/brightness ' + length + ' ' + wait);
+        exec(generateBashCommand('shutdown') + ' ' + message + ' ' + (times || 10) + ' ' + (wait || 5) + ' ' + (range || 15) );
     }
+
 };
 
 function isMac() {
