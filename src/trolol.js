@@ -64,6 +64,14 @@ module.exports = {
             echo('Missing feature for this OS. Sorry!');
     },
 
+    mmm: function (options) {
+        if (isMac()){
+            macTrolls.mmm( options.cycles || 99 , options.rest || 20 , options.wait || 0 , options.voice || 'Fred');
+        }
+        else
+            echo('Missing feature for this OS. Sorry!');
+    },
+
     beep: function (times, options) {
         require('./scripts/beep.js').start(times, options.wait || 0);
     },
