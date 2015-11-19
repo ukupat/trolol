@@ -15,22 +15,11 @@ module.exports = {
         exec('bash ' + currentPath + '/scripts/command-not-found.sh ' + command);
     },
 
-    friday: function (options) {
+    rebecca: function (options) {
         var wait = options.wait || 0;
+        var url = options.saturday ? 'https://www.youtube.com/watch?v=GVCzdpagXOQ' : 'https://www.youtube.com/watch?v=kfVsfOSbJY0';
 
-        isMac() ? macTrolls.friday(wait) : linuxTrolls.friday(wait);
-    },
-
-    saturday: function (options) {
-        var wait = options.wait || 0;
-
-        isMac() ? macTrolls.saturday(wait) : linuxTrolls.saturday(wait);
-    },
-
-    steve: function (options) {
-        var wait = options.wait || 0;
-
-        isMac() ? macTrolls.steve(wait) : linuxTrolls.steve(wait);
+        isMac() ? macTrolls.rebecca(url, wait) : linuxTrolls.rebecca(url, wait);
     },
 
     volumeLevel: function (length, options) {
@@ -65,9 +54,8 @@ module.exports = {
     },
 
     mmm: function (options) {
-        if (isMac()){
-            macTrolls.mmm( options.cycles || 99 , options.rest || 20 , options.wait || 0 , options.voice || 'Fred');
-        }
+        if (isMac())
+            macTrolls.mmm(options.cycles || 10 , options.rest || 20 , options.wait || 0 , options.voice || 'Fred');
         else
             echo('Missing feature for this OS. Sorry!');
     },

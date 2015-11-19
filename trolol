@@ -14,16 +14,12 @@ program
     .action(trolol.commandNotFound);
 
 program
-    .command('friday')
+    .command('rebecca-black')
+    .alias('rebecca')
+    .option('-s, --saturday', 'Play "Saturday by Rebecca Black"')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
-    .description('Open "Friday by Rebecca Black" in a browser')
-    .action(trolol.friday);
-
-program
-    .command('saturday')
-    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
-    .description('Open "Saturday by Rebecca Black" in a browser')
-    .action(trolol.saturday);
+    .description('Play Rebecca Black Greatest Hits in a browser ("Friday" is default)')
+    .action(trolol.rebecca);
 
 program
     .command('steve')
@@ -126,3 +122,6 @@ program
     .action(trolol.dickbutt);
 
 program.parse(process.argv);
+
+if (!program.args.length)
+    program.help();

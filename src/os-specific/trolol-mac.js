@@ -2,12 +2,12 @@ require('shelljs/global');
 
 module.exports = {
 
-    friday: function (wait) {
-        exec(generateBashCommand('friday') + ' ' + wait);
+    rebecca: function (url, wait) {
+        exec(generateBashCommand('rebecca') + ' ' + url + ' ' + wait);
     },
 
-    saturday: function (wait) {
-        exec(generateBashCommand('saturday') + ' ' + wait);
+    steve: function (wait) {
+        exec(generateBashCommand('steve') + ' ' + wait);
     },
 
     say: function (message, scary, wait) {
@@ -17,7 +17,7 @@ module.exports = {
     },
 
     mmm: function (cycles, rest, wait, voice) {
-        exec(generateBashCommand('mmm') + ' ' + cycles + ' ' + rest + ' ' + wait + ' ' + voice );
+        exec(generateBashCommand('mmm') + ' ' + cycles + ' ' + rest + ' ' + wait + ' ' + voice);
     },
 
     photoBooth: function (times, wait) {
@@ -30,10 +30,6 @@ module.exports = {
 
     eject: function (times, wait) {
         exec(generateBashCommand('eject') + ' ' + times + ' ' + wait);
-    },
-
-    steve: function (wait) {
-        exec(generateBashCommand('steve') + ' ' + wait);
     }
 };
 

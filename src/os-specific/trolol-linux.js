@@ -2,12 +2,8 @@ require('shelljs/global');
 
 module.exports = {
 
-    friday: function (wait) {
-        exec(generateBashCommand('friday') + ' ' + wait);
-    },
-
-    saturday: function (wait) {
-        exec(generateBashCommand('saturday') + ' ' + wait);
+    rebecca: function (wait) {
+        exec(generateBashCommand('rebecca') + ' ' + url + ' ' + wait);
     },
 
     steve: function (wait) {

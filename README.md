@@ -23,9 +23,7 @@ $ npm install -g trolol
 
     command-not-found|cmd <command>      Overwrite command with a fake alias
 
-    friday [options]                     Open "Friday by Rebecca Black" in a browser
-    saturday [options]                     Open "Saturday by Rebecca Black" in a browser
-    steve [options]                      Open "Developers by Steve Balmer" in a browser
+    rebecca-black|rebecca [options]      Play Rebecca Black Greatest Hits in a browser ("Friday" is default)
     steve [options]                      Open "Developers by Steve Balmer" in a browser
 
     volume-level|vol [options] <length>  Change volume level randomly in period of time (length in seconds)
@@ -39,6 +37,7 @@ $ npm install -g trolol
     eject [options] <times>              Eject media from drive after every 15 seconds n time
 
     say [options] <message>              [MAC ONLY] Scare the sh*t out of your dude with a speaking computer
+    mmm [options]                        [MAC ONLY] Receive repeated approval from your computer
     photo-booth [options] <times>        [MAC ONLY] Open up Photo booth n times
     spotify [options] <times>            [MAC ONLY] Switch Spotify music track back after every 15 seconds n time
 
