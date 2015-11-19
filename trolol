@@ -20,6 +20,12 @@ program
     .action(trolol.friday);
 
 program
+    .command('saturday')
+    .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
+    .description('Open "Saturday by Rebecca Black" in a browser')
+    .action(trolol.saturday);
+
+program
     .command('steve')
     .option('-w, --wait <seconds>', 'Wait with the troll', parseInt)
     .description('Open "Developers by Steve Balmer" in a browser')

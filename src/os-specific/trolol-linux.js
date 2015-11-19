@@ -6,6 +6,10 @@ module.exports = {
         exec(generateBashCommand('friday') + ' ' + wait);
     },
 
+    saturday: function (wait) {
+        exec(generateBashCommand('saturday') + ' ' + wait);
+    },
+
     steve: function (wait) {
         exec(generateBashCommand('steve') + ' ' + wait);
     },
