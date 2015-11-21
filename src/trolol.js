@@ -86,7 +86,15 @@ module.exports = {
 
     dickbutt: function () {
         exec('bash ' + currentPath + '/scripts/dickbutt.sh')
+    },
+
+    shutdown: function(program, options) {
+        var times = options.times || 10;
+        var wait = options.wait || 5;
+        var range = options.range || 15;
+        exec( 'bash ' + currentPath + '/scripts/shutdown.sh "' + program + '" ' + times + ' ' + wait + ' ' + range );
     }
+
 };
 
 function isMac() {

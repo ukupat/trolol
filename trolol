@@ -121,6 +121,15 @@ program
     .description('[RUN AS ADMIN] Add Dickbutt ASCII art text to Terminal Message of the day')
     .action(trolol.dickbutt);
 
+program
+    .command('shutdown')
+    .arguments('<program>')
+    .option('-t, --times <integer>', 'How many times the app "crashes"', parseInt)
+    .option('-w, --wait <minutes>', 'Minimum minutes between crashes', parseInt)
+    .option('-r, --range <minutes>', 'Variety in minutes between crashes', parseInt)
+    .description('Quit a program every [wait] to [wait+random] minutes.')
+    .action(trolol.shutdown);
+
 program.parse(process.argv);
 
 if (!program.args.length)
