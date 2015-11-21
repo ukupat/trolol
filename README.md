@@ -95,7 +95,7 @@ Command
 $ trolol shutdown iTunes --times 10
 ```
 
-Will shut down iTunes randomly every 5 - 20 minutes, a total of 10 times
+will shut down iTunes randomly every 5 - 20 minutes, a total of 10 times
 
 ## Contribute
 
