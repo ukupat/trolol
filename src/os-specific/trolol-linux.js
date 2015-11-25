@@ -2,7 +2,7 @@ require('shelljs/global');
 
 module.exports = {
 
-    rebecca: function (wait) {
+    rebecca: function (url,wait) {
         exec(generateBashCommand('rebecca') + ' ' + url + ' ' + wait);
     },
 
