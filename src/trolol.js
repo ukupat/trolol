@@ -21,6 +21,7 @@ module.exports = {
 
         isMac() ? macTrolls.rebecca(url, wait) : linuxTrolls.rebecca(url, wait);
     },
+
     steve: function (options) {
         var wait = options.wait || 0;
 
