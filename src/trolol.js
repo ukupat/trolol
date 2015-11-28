@@ -21,6 +21,11 @@ module.exports = {
 
         isMac() ? macTrolls.rebecca(url, wait) : linuxTrolls.rebecca(url, wait);
     },
+    steve: function (options) {
+        var wait = options.wait || 0;
+
+        isMac() ? macTrolls.steve(wait) : linuxTrolls.steve(wait);
+    },
 
     volumeLevel: function (length, options) {
         var wait = options.wait || 0;
