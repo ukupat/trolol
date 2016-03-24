@@ -106,7 +106,7 @@ will shut down iTunes randomly every 5 - 20 minutes, a total of 10 times
 5. Test (no automated tests for now)
 6. Make a pull request
 
-With a **succesful contribution** you can **write your name in history**.
+With a **successful contribution** you can **write your name in history**.
 
 ## License
 
