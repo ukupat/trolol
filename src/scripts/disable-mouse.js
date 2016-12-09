@@ -19,6 +19,6 @@ module.exports = {
             }, 1);
         }, wait * 1000);
 
-        console.log('Random mouse movement loop is going to be activated in ' + wait + ' second(s), trololol...');
+        console.log('Mouse will be disabled in ' + wait + ' second(s), trololol...');
     }
 };
